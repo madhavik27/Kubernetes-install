@@ -1,0 +1,17 @@
+pipeline {
+ agent {
+  kubernetes {
+label 'maven'
+  }
+ }
+ stages {
+    stage('welcome to devops') {
+      steps {
+        script {
+            println "welcome to DVS Devops Sessions"
+        }
+      }
+    }
+  }
+}
+
